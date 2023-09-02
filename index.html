@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student's Data</title>
+</head>
+<body>
+  <h2 class="text-center">Student's Data</h2>
+    <form class="border border-3 w-50 mx-auto p-4" id="form">
+        <div class="mb-3">
+          <label for="studentNo" class="form-label">StudentNo</label>
+          <input type="number" class="form-control" id="studentNo" name="StudentNo">
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="Name">
+        </div>
+        <div class="mb-3">
+            <label for="section" class="form-label"> Section </label>
+            <input type="text" class="form-control" id="section" name="Section">
+        </div>
+        <div class="mb-3">
+            <label for="Branch" class="form-label"> Branch </label>
+            <input type="text" class="form-control" id="branch" name="Branch">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label"> Email Id </label>
+            <input type="email" class="form-control" id="email" name="Email">
+        </div> 
+        <button type="submit" class="btn btn-primary" id="btn">create</button>
+      </form>
+      <table  class="table table-striped my-3">
+        <thead>
+            <tr>
+              <th>StudentNO</th>
+              <th>Name</th>
+              <th>Section</th>
+              <th>Branch</th>
+              <th>Email-Id</th>
+              <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentsData">
+
+        </tbody>
+        
+      </table>
+
+      <!-- js link -->
+      <!-- <link rel="stylesheet" href="./script.js"> -->
+      <script src="./script.js"></script>
+</body>
+</html>
